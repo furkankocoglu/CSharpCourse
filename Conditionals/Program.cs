@@ -9,6 +9,11 @@
             {
                 Console.WriteLine("Number is 10");
             }
+            else if (number==20)
+            {
+                Console.WriteLine("Number is not 20");
+
+            }
             else
             {
                 Console.WriteLine("Number is not 10");
