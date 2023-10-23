@@ -18,7 +18,13 @@
             Console.WriteLine("Number4 is {0}", number4);
             Console.WriteLine("Number5 is {0}", number5);
             Console.WriteLine("Character is : {0}", (int)character);
+            Console.WriteLine((int)Days.Friday);
+
             Console.ReadLine();
         }
+    }
+    enum Days
+    {
+        Monday=1, Tuesday, Wednesday, Friday, Saturday, Sunday 
     }
 }
