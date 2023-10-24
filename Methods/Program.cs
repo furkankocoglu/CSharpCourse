@@ -1,6 +1,4 @@
-﻿using System.Numerics;
-
-namespace Methods
+﻿namespace Methods
 {
     internal class Program
     {
@@ -48,7 +46,6 @@ namespace Methods
         }
         static int Add4(int number1,params int[] numbers)
         {
-
             return numbers.Sum();
         }
     }
