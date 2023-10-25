@@ -5,6 +5,21 @@
         static void Main(string[] args)
         {
             //InterfacesIntro();
+            //Demo();
+            ICustomerDal[] customerDals =
+            {
+                new SqlServerCustomerDal(),
+                new OracleCustomerDal(),
+                new MySqlCustomerDal()
+            };
+            foreach (var customer in customerDals)
+            {
+                customer.Add();
+            }
+        }
+
+        private static void Demo()
+        {
             CustomerManager customerManager = new CustomerManager();
             customerManager.Add(new OracleCustomerDal());
         }
