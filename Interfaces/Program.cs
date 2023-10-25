@@ -4,6 +4,13 @@
     {
         static void Main(string[] args)
         {
+            //InterfacesIntro();
+            CustomerManager customerManager = new CustomerManager();
+            customerManager.Add(new OracleCustomerDal());
+        }
+
+        private static void InterfacesIntro()
+        {
             PersonManager manager = new PersonManager();
             Customer customer = new Customer()
             {
@@ -23,6 +30,7 @@
             };
             manager.Add(student);
         }
+
         interface IPerson
         {
             public int Id { get; set; }
